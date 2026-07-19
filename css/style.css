@@ -1,0 +1,2552 @@
+
+:root {
+    /* widths for rows and containers
+     */
+    --header-height       : 160px;
+    --header-height-min   : 80px;
+}
+/* on mobile devices below 600px
+ */
+@media screen and (max-width: 600px) {
+    :root {
+        --header-height : 100px;
+        --header-height-min   : 80px;
+    }
+}
+/* Theme Colors */
+:root {
+    --accent-color       : #FFC43F;
+    --dark-color         : #222222;
+    --light-dark-color   : #727272;
+    --light-color        : #fff;
+    --grey-color         : #dbdbdb;
+    --light-grey-color   : #fafafa;
+    --primary-color      : #6995B1;
+    --light-primary-color   : #eef1f3;
+    --apna-section-heading-size: clamp(2rem, 3.2vw, 2.75rem);
+    --apna-paragraph-size: .9rem;
+    --apna-paragraph-leading: 1.72;
+}
+
+/* Fonts */
+:root {
+    --body-font           : "Open Sans", sans-serif;
+    --heading-font        : "Nunito", sans-serif;
+}
+
+body {
+  --bs-link-color: #333;
+  --bs-link-hover-color:#333;
+
+  --bs-link-color-rgb: 40,40,40;
+  --bs-link-hover-color-rgb: 0,0,0;
+
+  /* --bs-link-color: #FFC43F;
+  --bs-link-hover-color: #FFC43F; */
+
+  --bs-light-rgb: 248, 248, 248;
+
+  --bs-font-sans-serif: "Open Sans", sans-serif;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 2;
+  --bs-body-color: #747474;
+
+  --bs-primary: #FFC43F;
+  --bs-primary-rgb: 255, 196, 63;
+
+  --bs-success: #a3be4c;
+  --bs-success-rgb: 163, 190, 76;
+  
+  --bs-primary-bg-subtle: #FFF9EB;
+  --bs-success-bg-subtle: #eef5e5;
+  
+  --bs-border-color: #F7F7F7;
+
+  --bs-secondary-rgb: 230, 243, 251;
+  /* --bs-success-rgb: 238, 245, 228; */
+  --bs-danger-rgb: 249, 235, 231;
+  --bs-warning-rgb: 255, 249, 235;
+  --bs-info-rgb: 230, 243, 250;
+}
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #ffc43f;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #f7a422;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #ffc43f;
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #d3d7dd;
+  --bs-btn-disabled-border-color: transparent;
+}
+.btn-outline-primary {
+  --bs-btn-color: #ffc43f;
+  --bs-btn-border-color: #ffc43f;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #ffc107;
+  --bs-btn-hover-border-color: #ffc107;
+  --bs-btn-focus-shadow-rgb: 13,110,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #ffc107;
+  --bs-btn-active-border-color: #ffc107;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff3cd;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #fff3cd;
+  --bs-gradient: none;
+}
+.btn-outline-light {
+  --bs-btn-color: #747474;
+  --bs-btn-border-color: #EFEFEF;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #EFEFEF;
+  --bs-btn-hover-border-color: #EFEFEF;
+  --bs-btn-focus-shadow-rgb: 248,249,250;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #EFEFEF;
+  --bs-btn-active-border-color: #EFEFEF;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #EFEFEF;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #EFEFEF;
+  --bs-gradient: none;
+}
+.btn-warning {
+  --bs-btn-color: #747474;
+  --bs-btn-bg: #FCF7EB;
+  --bs-btn-border-color: #FCF7EB;
+  --bs-btn-hover-color: #747474;
+  --bs-btn-hover-bg: #FFECBE;
+  --bs-btn-hover-border-color: #FFECBE;
+  --bs-btn-focus-shadow-rgb: 217,164,6;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #FFECBE;
+  --bs-btn-active-border-color: #FFECBE;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #FCF7EB;
+  --bs-btn-disabled-border-color: #FCF7EB;
+}
+.btn-success {
+  --bs-btn-color: #222;
+  --bs-btn-bg: #EEF5E4;
+  --bs-btn-border-color: #EEF5E4;
+  --bs-btn-hover-color: #222;
+  --bs-btn-hover-bg: #9de3c2;
+  --bs-btn-hover-border-color: #9de3c2;
+  --bs-btn-focus-shadow-rgb: 60,153,110;
+  --bs-btn-active-color: #222;
+  --bs-btn-active-bg: #9de3c2;
+  --bs-btn-active-border-color: #9de3c2;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #222;
+  --bs-btn-disabled-bg: #EEF5E4;
+  --bs-btn-disabled-border-color: #EEF5E4;
+}
+.btn-danger {
+  --bs-btn-color: #222;
+  --bs-btn-bg: #FFEADA;
+  --bs-btn-border-color: #FFEADA;
+  --bs-btn-hover-color: #222;
+  --bs-btn-hover-bg: #ecc9af;
+  --bs-btn-hover-border-color: #ecc9af;
+  --bs-btn-focus-shadow-rgb: 60,153,110;
+  --bs-btn-active-color: #222;
+  --bs-btn-active-bg: #ecc9af;
+  --bs-btn-active-border-color: #ecc9af;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #222;
+  --bs-btn-disabled-bg: #FFEADA;
+  --bs-btn-disabled-border-color: #FFEADA;
+}
+body {
+  letter-spacing: 0.03em;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--heading-font);
+  color: var(--dark-color);
+  font-weight: 700;
+}
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  font-weight: 700;
+}
+.breadcrumb.text-white {
+  --bs-breadcrumb-divider-color: #fff;
+  --bs-breadcrumb-item-active-color: var(--bs-primary);
+}
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: var(--bs-primary);
+}
+.nav-pills .nav-link {
+  --bs-nav-pills-link-active-color: #111;
+  --bs-nav-pills-link-active-bg: #f1f1f1;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 3rem;
+}
+/*----------------------------------------------*/
+/* 6. SITE STRUCTURE */
+/*----------------------------------------------*/
+/* 6.1 Header
+--------------------------------------------------------------*/
+.apnamart-logo {
+  display: inline-block;
+  color: #222;
+  font-family: "Nunito", sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.65rem);
+  font-weight: 700;
+  letter-spacing: -0.08em;
+  line-height: 1;
+  white-space: nowrap;
+}
+.apnamart-logo span {
+  color: var(--accent-color);
+}
+
+/* *** Start editing below this line *** */
+.container-fluid {
+  max-width: 1600px;
+}
+.banner-blocks {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.block-1 { grid-area: 1 / 1 / 3 / 8; }
+.block-2 { grid-area: 1 / 8 / 2 / 13; }
+.block-3 { grid-area: 2 / 8 / 3 / 13; }
+
+@media screen and (max-width:1140px) {
+  .banner-blocks {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .block-1 { grid-area: 1 / 1 / 3 / 2; }
+  .block-2 { grid-area: 3 / 1 / 4 / 2; }
+  .block-3 { grid-area: 4 / 1 / 5 / 2; }
+  
+}
+
+/* banner ad */
+.banner-ad {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.banner-ad.blue {
+  background: #e6f3fb;
+}
+.banner-ad .swiper-pagination {
+  bottom: 40px;
+  left: 0;
+  right: 0;
+}
+.banner-ad .swiper-pagination .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  margin: 4px;
+  background: #FFF;
+  opacity: 1;
+  transition: background 0.3s ease-out;
+}
+.banner-ad .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background: #FFC43F;
+}
+.banner-ad .swiper-slide {
+  min-height: 630px;
+  display: flex;
+}
+/* .banner-ad .banner-content {
+  padding: 52px;
+}
+.banner-ad.large .banner-content {
+  padding: 90px;
+} */
+.banner-ad .banner-content .categories {
+  font-family: 'Garamond';
+  font-size: 37px;
+  text-transform: capitalize;
+  color: var(--dark-color);
+}
+.banner-ad .banner-content .sale {
+  position: relative;
+  display: inline-block;
+}
+.banner-ad .banner-content .sale:before {
+  content: '';
+  width: 80px;
+  border-bottom: 1px solid #111;
+  position: absolute;
+  bottom: 6px;
+}
+.banner-ad .banner-content .sale:after {
+  content: 'SALE';
+  font-family: var(--body-font);
+  position: absolute;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #252525;
+  bottom: 0;
+  right: 0;
+}
+.banner-ad .banner-content .banner-title {
+  letter-spacing: 0.02em;
+  font-size: 33px;
+}
+.banner-ad.large .banner-content .categories {
+  color: var(--accent-color);
+}
+.banner-ad.large .banner-content .banner-title {
+  font-size: 54px;
+}
+
+/* Swiper carousel */
+.swiper-prev,
+.swiper-next {
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  background: #F1F1F1;
+  color: #222222;
+  padding: 0;
+  text-align: center;
+  border-radius: 10px;
+  --bs-btn-border-color: transparent;
+  --bs-btn-active-bg: #ec9b22;
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-hover-bg: #FFC43F;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-disabled-color: #ccc;
+  --bs-btn-disabled-bg: #eaeaea;
+  --bs-btn-disabled-border-color: #eaeaea
+}
+.swiper-prev:hover,
+.swiper-next:hover {
+  background: #FFC43F;
+}
+.btn-link {
+  margin-right: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+  text-transform: capitalize;
+  color: #787878;
+}
+/* category carousel */
+.category-carousel .category-item {
+  background: #FFFFFF;
+  border: 1px solid #FBFBFB;
+  box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  text-align: center;
+  padding: 60px 20px;
+  margin: 20px 0;
+  transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+}
+.category-carousel .category-item:hover {
+  transform: translate3d(0,-10px,0);
+  box-shadow: 0px 21px 44px rgba(0, 0, 0, 0.08);
+}
+.category-carousel .category-item .category-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #222222;
+  margin-top: 20px;
+}
+
+/* brand carousel */
+.brand-carousel .brand-item {
+  background: #FFFFFF;
+  border: 1px solid #FBFBFB;
+  box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  padding: 16px;
+}
+.brand-carousel .brand-item img {
+  width: 100%;
+  border-radius: 12px;
+}
+.brand-carousel .brand-item .brand-details {
+  margin-left: 15px;
+}
+.brand-carousel .brand-item .brand-title {
+  margin: 0;
+}
+
+/* product tabs */
+.product-tabs .nav-tabs {
+  justify-content: flex-end;
+  border: none;
+  
+  --bs-nav-link-hover-color: #111;
+  --bs-nav-link-color: #555;
+  --bs-nav-tabs-link-border-color: #fff;
+  --bs-nav-tabs-link-hover-border-color: transparent;
+  --bs-nav-tabs-link-active-border-color: #fff;
+}
+.product-tabs .nav-tabs .nav-link.active, 
+.product-tabs .nav-tabs .nav-item.show .nav-link {
+  /* border: none; */
+  border-bottom: 3px solid var(--accent-color);
+}
+
+/* product-grid */
+/* .product-grid {
+  gap: 25px;
+} */
+.product-item {
+  position: relative;
+  padding: 16px;
+  background: #FFFFFF;
+  border: 1px solid #FBFBFB;
+  box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  margin-bottom: 30px;
+  transition: box-shadow 0.3s ease-out;
+}
+.product-item:hover {
+  box-shadow: 0px 21px 44px rgba(0, 0, 0, 0.08);
+}
+.product-item h3 {
+  display: block;
+  width: 100%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #333333;
+  margin: 0;
+}
+.product-item figure {
+  background: #F9F9F9;
+  border-radius: 12px;
+  text-align: center;
+}
+.product-item figure img {
+  max-height: 210px;
+  height: auto;
+}
+.product-item .btn-wishlist {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  transition: all 0.3s ease-out;
+}
+.product-item .btn-wishlist:hover {
+  background: rgb(240, 56, 56);
+  color: #fff;
+}
+.product-item .qty {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #9D9D9D;
+}
+.product-item .rating {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #222222;
+}
+.product-item .rating iconify-icon {
+  color: #FFC43F;
+}
+.product-item .price {
+  display: block;
+  width: 100%;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #222222;
+}
+.product-item .product-qty {
+  width: 85px;
+}
+.product-item .btn-link {
+  text-decoration: none;
+}
+.product-item #quantity {
+  height: auto;
+  width: 28px;
+  text-align: center;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.product-item .btn-number {
+  width: 26px;
+  height: 26px;
+  line-height: 1;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid #E2E2E2;
+  border-radius: 6px;
+  color: #222;
+  padding: 0;
+}
+
+/* cart */
+.cart .product-qty {
+  min-width: 130px;
+}
+
+/* floating image */
+.image-float {
+  margin-top: -140px;
+  margin-bottom: -140px;
+}
+@media screen and (max-width:991px) {
+  .image-float {
+    margin: 0;
+  }
+}
+ /* post item */
+.post-item .post-meta {
+  font-size: 0.8rem;
+  line-height: 1;
+}
+.post-item .post-meta svg {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 991px) {
+  /* offcanvas menu */
+  .offcanvas-body .nav-item {
+    font-weight: 700;
+    border-bottom: 1px solid #d1d1d1;
+  }
+  .offcanvas-body .filter-categories {
+    width: 100%;
+    margin-bottom: 20px !important;
+    border: 1px solid #d1d1d1 !important;
+    padding: 14px;
+    border-radius: 8px;
+  }
+  /* dropdown-menu */
+  .dropdown-menu {
+    padding: 0;
+    border: none;
+    line-height: 1.4;
+    font-size: 0.9em;
+  }
+  .dropdown-menu a {
+    padding-left: 0;
+  }
+  .dropdown-toggle::after {
+    position: absolute;
+    right: 0;
+    top: 21px;
+  }
+}
+
+/* single product */
+/* product-thumbnail-slider */
+.product-thumbnail-slider {
+  height: 740px;
+}
+@media screen and (max-width:992px) {
+  .product-thumbnail-slider {
+    margin-top: 20px;
+    height: auto;
+  }
+}
+@media screen and (min-width:992px) {
+  .product-thumbnail-slider {
+    height: 520px;
+  }
+}
+@media screen and (min-width:1200px) {
+  .product-thumbnail-slider {
+    height: 740px;
+  }
+}
+
+/* ApnaMart navigation */
+.apna-nav-header {
+  padding: 1.35rem 1.25rem;
+  border-bottom: 1px solid #ecece4;
+  justify-content: space-between;
+}
+.apna-nav-body {
+  font-family: "Open Sans", sans-serif;
+}
+.apna-nav-intro,
+.apna-mobile-categories,
+.apna-nav-promo,
+.apna-nav-footer {
+  display: none;
+}
+.apna-department-toggle {
+  min-width: 225px;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  padding: .75rem 1rem;
+  border: 0;
+  border-radius: 12px;
+  background: #f4f6ed;
+  color: #24271f;
+  font-size: .82rem;
+  font-weight: 700;
+}
+.apna-grid-mark {
+  width: 27px;
+  height: 27px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #6bb252;
+  color: #fff;
+  font-size: 1rem;
+}
+.apna-department-dropdown,
+.apna-pages-dropdown {
+  padding: .55rem;
+  border: 1px solid #e8e8df;
+  border-radius: 14px;
+  box-shadow: 0 18px 45px rgba(35, 45, 28, .12);
+}
+.apna-department-dropdown .dropdown-item,
+.apna-pages-dropdown .dropdown-item {
+  padding: .7rem .8rem;
+  border-radius: 9px;
+  font-size: .8rem;
+}
+.apna-department-dropdown .dropdown-item span {
+  display: inline-block;
+  width: 28px;
+}
+.apna-main-links {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+  margin: 0 1.8rem;
+}
+.apna-main-links .nav-link {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .75rem .15rem;
+  color: #55594f;
+  font-size: .82rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.apna-main-links .nav-link:hover,
+.apna-main-links .active .nav-link {
+  color: #579e41;
+}
+.apna-sale-pill {
+  padding: .2rem .42rem;
+  border-radius: 999px;
+  background: #ffc43f;
+  color: #3b310f;
+  font-size: .58rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.apna-nav-body a:focus-visible,
+.apna-nav-body button:focus-visible {
+  outline: 3px solid rgba(107,178,82,.3);
+  outline-offset: 2px;
+}
+
+@media (min-width: 992px) {
+  .apna-nav-header {
+    display: none;
+  }
+  .apna-nav-body {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #offcanvasNavbar {
+    width: min(390px, 92vw);
+    border: 0;
+    background: #fbfbf7;
+  }
+  .apna-nav-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.35rem;
+    text-align: center;
+  }
+  .apna-nav-intro {
+    display: block;
+    margin-bottom: 1.25rem;
+  }
+  .apna-nav-kicker {
+    color: #6bb252;
+    font-size: .67rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+  }
+  .apna-nav-intro h2 {
+    max-width: 280px;
+    margin: .45rem auto 0;
+    font: 700 1.65rem/1.08 "Nunito", sans-serif;
+    letter-spacing: -.035em;
+  }
+  .apna-department-menu {
+    width: 100%;
+  }
+  .apna-department-toggle {
+    width: 100%;
+    justify-content: center;
+    background: #edf4e7;
+    position: relative;
+  }
+  .apna-department-toggle::after {
+    position: absolute;
+    right: 1rem;
+    margin-left: 0;
+  }
+  .apna-department-dropdown {
+    width: 100%;
+  }
+  .apna-mobile-categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .55rem;
+    margin: 1rem 0 1.35rem;
+  }
+  .apna-mobile-categories a {
+    min-width: 0;
+    display: grid;
+    place-items: center;
+    gap: .35rem;
+    padding: .75rem .25rem;
+    border: 1px solid #e7e7df;
+    border-radius: 13px;
+    background: #fff;
+    color: #4b4f46;
+    text-decoration: none;
+  }
+  .apna-mobile-categories a span {
+    font-size: 1.3rem;
+  }
+  .apna-mobile-categories small {
+    font-size: .62rem;
+    font-weight: 700;
+  }
+  .apna-main-links {
+    display: grid;
+    width: 100%;
+    gap: .25rem;
+    margin: 0;
+    justify-content: stretch;
+  }
+  .apna-main-links .nav-item {
+    border-bottom: 1px solid #e9e9e1;
+  }
+  .apna-main-links .nav-link {
+    min-height: 48px;
+    justify-content: center;
+    padding: .75rem .2rem;
+    color: #24271f;
+    font-size: .94rem;
+    font-weight: 700;
+  }
+  .apna-main-links .dropdown-toggle::after {
+    position: absolute;
+    right: .25rem;
+    margin-left: 0;
+  }
+  .apna-pages-dropdown {
+    width: 100%;
+    margin-bottom: .6rem !important;
+    box-shadow: none;
+  }
+  .apna-nav-promo {
+    display: grid;
+    justify-items: center;
+    margin-top: 1.4rem;
+    padding: 1.2rem;
+    border-radius: 17px;
+    background: linear-gradient(135deg, #ffdc72, #ffc43f);
+    color: #30280f;
+    position: relative;
+    overflow: hidden;
+  }
+  .apna-nav-promo::after {
+    content: "20%";
+    position: absolute;
+    right: -5px;
+    bottom: -18px;
+    color: rgba(255,255,255,.35);
+    font: 700 4.5rem "Nunito", sans-serif;
+  }
+  .apna-nav-promo span {
+    font-size: .6rem;
+    font-weight: 700;
+    letter-spacing: .13em;
+  }
+  .apna-nav-promo strong {
+    font: 700 1.3rem "Nunito", sans-serif;
+  }
+  .apna-nav-promo small {
+    font-size: .68rem;
+  }
+  .apna-nav-footer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: auto;
+    padding-top: 1.4rem;
+    font-size: .72rem;
+    font-weight: 700;
+  }
+  .apna-nav-footer a {
+    color: #5e6258;
+    text-decoration: none;
+  }
+  .apna-status-dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-right: .35rem;
+    border-radius: 50%;
+    background: #6bb252;
+    box-shadow: 0 0 0 4px rgba(107,178,82,.13);
+  }
+  .apna-login-link {
+    color: #508f3d !important;
+  }
+}
+
+/* Enhanced classic landing hero */
+.apna-classic-hero {
+  padding-top: 1.25rem !important;
+  padding-bottom: 2.25rem !important;
+  background:
+    radial-gradient(circle at 8% 15%, rgba(107,178,82,.08), transparent 23%),
+    radial-gradient(circle at 91% 80%, rgba(255,196,63,.12), transparent 20%),
+    #fff;
+}
+.apna-classic-hero .banner-blocks {
+  gap: 1rem;
+}
+.apna-classic-hero .banner-ad {
+  border: 1px solid rgba(40,45,34,.06);
+  border-radius: 28px;
+  box-shadow: 0 18px 50px rgba(45,55,35,.07);
+  transition: box-shadow .3s ease;
+}
+.apna-classic-hero .banner-ad:hover {
+  box-shadow: 0 25px 60px rgba(45,55,35,.11);
+}
+.apna-main-banner {
+  background: linear-gradient(125deg, #e7f1c4 0%, #f3f6df 57%, #dce9ba 100%) !important;
+  isolation: isolate;
+  position: relative;
+}
+.apna-main-banner::before,
+.apna-main-banner::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border: 1px solid rgba(80,105,45,.1);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.apna-main-banner::before {
+  width: 410px;
+  height: 410px;
+  right: -130px;
+  top: -120px;
+  box-shadow: 0 0 0 55px rgba(255,255,255,.12), 0 0 0 110px rgba(255,255,255,.08);
+}
+.apna-main-banner::after {
+  width: 180px;
+  height: 180px;
+  left: -90px;
+  bottom: -95px;
+}
+.apna-main-banner .banner-content {
+  min-height: 590px;
+  align-items: center;
+}
+.apna-main-banner .content-wrapper {
+  position: relative;
+  z-index: 3;
+}
+.apna-main-banner .content-wrapper h3 {
+  max-width: 700px;
+  margin-bottom: 1.25rem;
+  color: #25291f;
+  font: 700 clamp(3rem, 5.6vw, 5.6rem)/.97 "Nunito", sans-serif;
+  letter-spacing: -.065em;
+}
+.apna-main-banner .content-wrapper p {
+  max-width: 570px;
+  color: #62685a;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.apna-hero-eyebrow,
+.apna-main-banner .categories {
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  padding: .45rem .75rem !important;
+  border: 1px solid rgba(70,95,40,.14);
+  border-radius: 999px;
+  background: rgba(255,255,255,.48);
+  color: #557e36 !important;
+  font-size: .67rem !important;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.apna-main-banner .btn {
+  border: 0;
+  border-radius: 10px !important;
+  background: #272a22;
+  color: #fff;
+  font-size: .7rem !important;
+  font-weight: 700;
+  letter-spacing: .08em;
+  box-shadow: 0 12px 24px rgba(39,42,34,.16);
+}
+.apna-main-banner .btn:hover {
+  background: #6bb252;
+  color: #fff;
+  transform: translateY(-2px);
+}
+.apna-main-banner .img-wrapper {
+  min-height: 450px;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.apna-main-banner .img-wrapper::before {
+  content: "";
+  width: min(29vw, 385px);
+  aspect-ratio: 1;
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,.48);
+  box-shadow: 0 0 0 38px rgba(255,255,255,.14);
+}
+.apna-main-banner .img-wrapper img {
+  width: 86%;
+  max-height: 440px;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 25px 22px rgba(55,65,40,.16));
+  animation: apna-product-float 5.5s ease-in-out infinite;
+}
+.apna-main-banner .swiper-pagination {
+  left: 3rem;
+  bottom: 1.75rem;
+  width: auto;
+}
+.apna-main-banner .swiper-pagination-bullet {
+  width: 7px;
+  height: 7px;
+  background: #272a22;
+  opacity: .25;
+  transition: width .25s, opacity .25s;
+}
+.apna-main-banner .swiper-pagination-bullet-active {
+  width: 26px;
+  border-radius: 999px;
+  opacity: 1;
+}
+.apna-promo-card {
+  min-height: 287px;
+  overflow: hidden;
+  isolation: isolate;
+  position: relative;
+  animation: apna-promo-background 7s ease-in-out infinite alternate;
+}
+.apna-promo-card::before {
+  content: "";
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  right: -35px;
+  top: 50%;
+  z-index: -1;
+  border-radius: 50%;
+  background: rgba(255,255,255,.36);
+  transform: translateY(-50%);
+  animation: apna-orbit-breathe 5s ease-in-out infinite;
+}
+.apna-fruit-card {
+  background-color: #f5d6be !important;
+}
+.apna-bakery-card {
+  background-color: #cde3d0 !important;
+}
+.apna-promo-card .banner-content {
+  min-height: 287px;
+  align-items: center;
+}
+.apna-promo-card .content-wrapper {
+  position: relative;
+  z-index: 3;
+}
+.apna-promo-card .categories.sale {
+  display: inline-block;
+  margin-bottom: .5rem !important;
+  padding: .35rem .62rem !important;
+  border-radius: 999px;
+  background: rgba(255,255,255,.58);
+  color: #3d4539;
+  font-size: .66rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.apna-promo-card .categories.sale::before,
+.apna-promo-card .categories.sale::after {
+  display: none;
+}
+.apna-promo-card h3 {
+  max-width: 190px;
+  margin: .55rem 0 1rem;
+  font: 700 clamp(1.65rem, 2.5vw, 2.4rem)/1 "Nunito", sans-serif;
+  letter-spacing: -.045em;
+}
+.apna-promo-card .nav-link {
+  display: inline-flex !important;
+  width: auto;
+  padding: 0 0 .2rem !important;
+  border-bottom: 1px solid currentColor;
+  color: #33372f;
+  font-size: .72rem;
+  font-weight: 700;
+}
+.apna-promo-card .nav-link svg {
+  width: 17px;
+  margin-left: .35rem;
+  transition: transform .2s;
+}
+.apna-promo-card .nav-link:hover svg {
+  transform: translateX(4px);
+}
+
+@keyframes apna-product-float {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  50% { transform: translate3d(0, -10px, 0) rotate(-1.25deg); }
+}
+
+@keyframes apna-promo-background {
+  0% { background-position: 92% 55%; }
+  100% { background-position: 89% 48%; }
+}
+
+@keyframes apna-orbit-breathe {
+  0%, 100% { opacity: .72; transform: translateY(-50%) scale(1); }
+  50% { opacity: 1; transform: translateY(-50%) scale(1.06); }
+}
+
+@media (max-width: 991.98px) {
+  .apna-main-banner .banner-content {
+    min-height: 520px;
+  }
+  .apna-main-banner .content-wrapper h3 {
+    font-size: clamp(2.8rem, 8vw, 4.6rem);
+  }
+  .apna-classic-hero .block-2,
+  .apna-classic-hero .block-3 {
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .apna-classic-hero .banner-blocks {
+    gap: .85rem;
+  }
+  .apna-main-banner .banner-content {
+    min-height: 700px;
+    align-content: start;
+    padding: 2.1rem 1.5rem 3.5rem !important;
+  }
+  .apna-main-banner .content-wrapper h3 {
+    font-size: clamp(2.65rem, 13vw, 3.7rem);
+  }
+  .apna-main-banner .img-wrapper {
+    min-height: 290px;
+    margin-top: 1rem;
+  }
+  .apna-main-banner .img-wrapper::before {
+    width: 230px;
+  }
+  .apna-main-banner .img-wrapper img {
+    width: 62%;
+    max-height: 290px;
+  }
+  .apna-main-banner .swiper-pagination {
+    left: 1.5rem;
+  }
+  .apna-promo-card .banner-content {
+    padding: 2rem !important;
+  }
+}
+
+/* Functional centered cart drawer */
+.apna-cart-drawer {
+  width: min(460px, 100vw) !important;
+  border: 0 !important;
+  background: #fbfbf7;
+  box-shadow: -24px 0 70px rgba(30,36,25,.16);
+}
+.apna-cart-header {
+  min-height: 88px;
+  padding: 1.2rem 1.4rem;
+  border-bottom: 1px solid #e7e7df;
+  background: #fff;
+  align-items: center;
+  justify-content: space-between;
+}
+.apna-cart-heading {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+.apna-cart-heading small,
+.apna-cart-heading h2 {
+  display: block;
+  margin: 0;
+}
+.apna-cart-heading small {
+  color: #85887f;
+  font-size: .6rem;
+  font-weight: 700;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+.apna-cart-heading h2 {
+  font: 700 1.2rem "Nunito", sans-serif;
+}
+.apna-cart-icon {
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: #edf4e7;
+  color: #5b9f46;
+}
+.apna-cart-body {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 1.25rem 1.4rem !important;
+}
+.apna-cart-progress {
+  height: 7px;
+  margin-bottom: 1.4rem;
+  border-radius: 999px;
+  background: #e8e8e0;
+  position: relative;
+}
+.apna-cart-progress span {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #6bb252, #9acb65);
+  transition: width .35s ease;
+}
+.apna-cart-progress p {
+  margin: .5rem 0 0;
+  color: #797d73;
+  font-size: .67rem;
+  text-align: center;
+}
+.apna-cart-items {
+  display: grid;
+  gap: .75rem;
+  margin-top: 2.1rem;
+}
+.apna-cart-item {
+  display: grid;
+  grid-template-columns: 76px 1fr 28px;
+  gap: .8rem;
+  align-items: center;
+  padding: .8rem;
+  border: 1px solid #e7e7df;
+  border-radius: 17px;
+  background: #fff;
+  position: relative;
+}
+.apna-cart-thumb {
+  width: 76px;
+  height: 76px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: #f2f5eb;
+  overflow: hidden;
+}
+.apna-cart-thumb img {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+}
+.apna-cart-item-copy h3 {
+  margin: 0;
+  font: 700 .86rem/1.2 "Nunito", sans-serif;
+}
+.apna-cart-item-copy > small {
+  color: #8a8d85;
+  font-size: .58rem;
+}
+.apna-cart-item-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .7rem;
+  margin-top: .55rem;
+}
+.apna-cart-item-bottom strong {
+  font-size: .78rem;
+}
+.apna-cart-qty {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid #e1e1d8;
+  border-radius: 8px;
+}
+.apna-cart-qty button,
+.apna-cart-qty span {
+  width: 27px;
+  height: 27px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: #fff;
+  font-size: .72rem;
+}
+.apna-cart-qty button:hover {
+  background: #edf4e7;
+}
+.apna-cart-remove {
+  width: 27px;
+  height: 27px;
+  align-self: start;
+  border: 0;
+  border-radius: 50%;
+  background: #f3f3ee;
+  color: #85877e;
+  line-height: 1;
+}
+.apna-cart-remove:hover {
+  background: #ffe5df;
+  color: #b34d38;
+}
+.apna-cart-empty {
+  min-height: 420px;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+.apna-cart-empty > span {
+  width: 82px;
+  height: 82px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  background: #edf4e7;
+  font-size: 2rem;
+}
+.apna-cart-empty h3 {
+  font: 700 1.35rem "Nunito", sans-serif;
+}
+.apna-cart-empty p {
+  max-width: 260px;
+  color: #81847c;
+  font-size: .78rem;
+}
+.apna-cart-footer {
+  width: 100%;
+  padding: 1.2rem 1.4rem 1.4rem;
+  border-top: 1px solid #e4e4dc;
+  background: #fff;
+  text-align: center;
+}
+.apna-cart-saving {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .2rem;
+}
+.apna-cart-saving span {
+  font-size: .8rem;
+  font-weight: 700;
+}
+.apna-cart-saving strong {
+  font: 700 1.2rem "Nunito", sans-serif;
+}
+.apna-cart-footer > small {
+  display: block;
+  margin-bottom: .85rem;
+  color: #8a8d85;
+  font-size: .62rem;
+}
+.apna-cart-footer .btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 0;
+  border-radius: 11px;
+  background: #272a22;
+  font-size: .78rem;
+  font-weight: 700;
+}
+.apna-cart-footer .btn:hover {
+  background: #5fa349;
+}
+.product-item .nav-link.added {
+  color: #4f913c !important;
+  font-weight: 700;
+}
+.btn-wishlist.active {
+  background: #ffe3e3 !important;
+  color: #d34b4b !important;
+}
+
+@media (min-width: 700px) {
+  .apna-cart-drawer.show {
+    top: 3vh;
+    right: 3vw;
+    bottom: 3vh;
+    height: 94vh;
+    border-radius: 24px 0 0 24px;
+    overflow: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .apna-main-banner .img-wrapper img,
+  .apna-promo-card,
+  .apna-promo-card::before {
+    animation: none !important;
+  }
+}
+
+@media (max-width: 991.98px) and (max-height: 760px) {
+  .apna-nav-body {
+    justify-content: flex-start;
+  }
+}
+
+/* Professional blue ApnaMart theme */
+:root {
+  --accent-color: #2563eb;
+  --dark-color: #0f172a;
+  --light-dark-color: #64748b;
+  --grey-color: #dbe4f0;
+  --light-grey-color: #f8fafc;
+  --primary-color: #2563eb;
+  --light-primary-color: #eff6ff;
+}
+body {
+  --bs-body-color: #526176;
+  --bs-primary: #2563eb;
+  --bs-primary-rgb: 37, 99, 235;
+  --bs-success: #0ea5e9;
+  --bs-success-rgb: 14, 165, 233;
+  --bs-primary-bg-subtle: #eff6ff;
+  --bs-success-bg-subtle: #eef8ff;
+  --bs-secondary-rgb: 239, 246, 255;
+  --bs-info-rgb: 224, 242, 254;
+  --bs-danger-rgb: 238, 242, 255;
+  --bs-warning-rgb: 255, 247, 237;
+  --bs-border-color: #e2e8f0;
+  background: #fff;
+  color: #526176;
+}
+.btn-primary {
+  --bs-btn-bg: #2563eb;
+  --bs-btn-hover-bg: #1d4ed8;
+  --bs-btn-active-bg: #1e40af;
+  --bs-btn-border-color: #2563eb;
+  --bs-btn-hover-border-color: #1d4ed8;
+}
+.btn-outline-primary {
+  --bs-btn-color: #2563eb;
+  --bs-btn-border-color: #2563eb;
+  --bs-btn-hover-bg: #2563eb;
+  --bs-btn-hover-border-color: #2563eb;
+}
+.text-primary { color: #2563eb !important; }
+.bg-primary { background-color: #2563eb !important; }
+.apnamart-logo span,
+.page-brand span { color: #2563eb; }
+header {
+  background: rgba(255,255,255,.96);
+  box-shadow: 0 8px 35px rgba(15,23,42,.05);
+}
+.search-bar {
+  border: 1px solid #e2e8f0;
+  background: #f8fafc !important;
+}
+.apna-grid-mark,
+.apna-status-dot,
+.apna-cart-progress span {
+  background: #2563eb;
+}
+.apna-department-toggle,
+.apna-cart-icon,
+.apna-cart-empty > span,
+.apna-cart-qty button:hover {
+  background: #eff6ff;
+  color: #2563eb;
+}
+.apna-main-links .nav-link:hover,
+.apna-main-links .active .nav-link,
+.apna-login-link {
+  color: #2563eb !important;
+}
+.apna-sale-pill {
+  background: #f59e0b;
+  color: #fff;
+}
+.apna-nav-promo {
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe) !important;
+  color: #172554 !important;
+}
+.apna-nav-promo::after { color: rgba(37,99,235,.12); }
+.apna-classic-hero {
+  background:
+    radial-gradient(circle at 8% 15%, rgba(37,99,235,.09), transparent 23%),
+    radial-gradient(circle at 91% 80%, rgba(14,165,233,.09), transparent 20%),
+    #fff;
+}
+.apna-main-banner {
+  background: linear-gradient(125deg, #eaf2ff 0%, #f5f9ff 56%, #dbeafe 100%) !important;
+}
+.apna-main-banner::before,
+.apna-main-banner::after { border-color: rgba(37,99,235,.11); }
+.apna-main-banner .content-wrapper h3 { color: #0f172a; }
+.apna-main-banner .content-wrapper p { color: #526176; }
+.apna-hero-eyebrow,
+.apna-main-banner .categories {
+  border-color: rgba(37,99,235,.15);
+  background: rgba(255,255,255,.68);
+  color: #2563eb !important;
+}
+.apna-main-banner .btn {
+  background: #0f172a;
+  box-shadow: 0 12px 26px rgba(15,23,42,.18);
+}
+.apna-main-banner .btn:hover { background: #2563eb; }
+.apna-fruit-card { background-color: #e8f0ff !important; }
+.apna-bakery-card { background-color: #e0f2fe !important; }
+.apna-promo-card .categories.sale {
+  background: rgba(255,255,255,.72);
+  color: #1e40af;
+}
+.apna-classic-hero .banner-ad,
+.product-item,
+.category-item,
+.brand-carousel .card {
+  border-color: #e2e8f0;
+  box-shadow: 0 16px 44px rgba(15,23,42,.06);
+}
+.category-item:hover,
+.product-item:hover {
+  border-color: #bfdbfe;
+  box-shadow: 0 20px 50px rgba(37,99,235,.1);
+}
+.swiper-prev,
+.swiper-next {
+  border-color: #dbeafe !important;
+  background: #eff6ff !important;
+  color: #1d4ed8 !important;
+}
+.swiper-prev:hover,
+.swiper-next:hover {
+  background: #2563eb !important;
+  color: #fff !important;
+}
+.nav-tabs .nav-link.active { color: #2563eb; }
+.nav-tabs .nav-link.active::after { background: #2563eb; }
+.apna-main-banner .swiper-pagination-bullet-active { background: #2563eb; }
+.apna-cart-drawer { background: #f8fafc; }
+.apna-cart-header,
+.apna-cart-footer,
+.apna-cart-item { border-color: #e2e8f0; }
+.apna-cart-footer .btn { background: #0f172a; }
+.apna-cart-footer .btn:hover { background: #2563eb; }
+.product-item .nav-link.added { color: #2563eb !important; }
+
+/* Highlight the primary product action without changing card dimensions. */
+.product-item .nav-link {
+  display: inline-flex;
+  min-height: 42px;
+  padding: .68rem 1rem !important;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  border: 1px solid #2563eb;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  box-shadow: 0 8px 18px rgba(37, 99, 235, .22);
+  color: #fff !important;
+  font-size: .86rem;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background .2s ease, border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+.product-item .nav-link iconify-icon {
+  font-size: 1.1rem;
+}
+.product-item .nav-link:hover {
+  border-color: #1e40af;
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  box-shadow: 0 11px 24px rgba(37, 99, 235, .3);
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+.product-item .nav-link:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, .28);
+  outline-offset: 3px;
+}
+.product-item .nav-link.added {
+  border-color: #059669;
+  background: #059669;
+  box-shadow: 0 8px 18px rgba(5, 150, 105, .22);
+  color: #fff !important;
+}
+footer { border-top: 1px solid #e2e8f0; }
+footer form[role="newsletter"] .form-control {
+  min-width: 0;
+}
+footer form[role="newsletter"] .btn {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+#footer-bottom {
+  display: flex;
+  min-height: 64px;
+  padding-block: 1.15rem;
+  align-items: center;
+  background: #0f172a;
+  color: #cbd5e1;
+  text-align: center;
+}
+#footer-bottom .container-fluid,
+#footer-bottom .row {
+  width: 100%;
+}
+#footer-bottom .copyright p {
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Refined homepage product presentation */
+.apna-home #trending-products,
+.apna-home section.overflow-hidden {
+  position: relative;
+}
+.apna-home #trending-products {
+  padding-block: clamp(3.5rem, 6vw, 5.5rem) !important;
+  border-block: 1px solid #e8eef7;
+  background: linear-gradient(180deg, #f8fbff 0%, #fff 100%);
+}
+.apna-home .section-header {
+  align-items: center;
+  margin-block: 2.5rem !important;
+}
+.apna-home .section-title {
+  color: #0f172a;
+  font: 800 clamp(1.75rem, 3vw, 2.55rem)/1.05 "Nunito", sans-serif;
+  letter-spacing: -.045em;
+}
+.apna-home .product-tabs .nav-tabs {
+  gap: .35rem;
+  padding: .3rem;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, .04);
+}
+.apna-home .product-tabs .nav-tabs .nav-link {
+  padding: .58rem .85rem;
+  border: 0;
+  border-radius: 9px;
+  color: #64748b;
+  font-size: .74rem;
+  font-weight: 700;
+}
+.apna-home .product-tabs .nav-tabs .nav-link.active {
+  border-bottom: 0;
+  background: #eff6ff;
+  color: #2563eb;
+}
+.apna-home .apna-trending-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding: 1.75rem;
+  border: 1px solid rgba(219, 234, 254, .95);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 96% 5%, rgba(14, 165, 233, .1), transparent 28%),
+    rgba(255, 255, 255, .92);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, .065);
+}
+.apna-home .apna-trending-intro {
+  max-width: 470px;
+}
+.apna-home .apna-section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .75rem;
+  color: #2563eb;
+  font-size: .67rem;
+  font-weight: 800;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.apna-home .apna-section-eyebrow > span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #0ea5e9;
+  box-shadow: 0 0 0 5px rgba(14, 165, 233, .1);
+}
+.apna-home .apna-trending-intro h2 {
+  margin: 0;
+  color: #0f172a;
+  font: 800 clamp(1.85rem, 3vw, 2.55rem)/1.05 "Nunito", sans-serif;
+  letter-spacing: -.05em;
+}
+.apna-home .apna-trending-intro p {
+  margin: .65rem 0 0;
+  color: #64748b;
+  font-size: .82rem;
+  line-height: 1.65;
+}
+.apna-home .apna-tab-nav {
+  max-width: 100%;
+}
+.apna-home .apna-tab-nav .nav-tabs {
+  flex-wrap: nowrap;
+  gap: .4rem;
+  padding: .38rem;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 16px;
+  background: #f8fafc;
+  box-shadow: inset 0 1px 2px rgba(15, 23, 42, .025);
+}
+.apna-home .apna-tab-nav .nav-link {
+  min-width: 138px;
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  padding: .7rem .78rem;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: transparent;
+  text-align: left;
+  transition: color .2s ease, background .2s ease, border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+.apna-home .apna-tab-nav .nav-link:hover {
+  border-color: #dbeafe;
+  background: #fff;
+  color: #1d4ed8;
+  transform: translateY(-1px);
+}
+.apna-home .apna-tab-nav .nav-link.active {
+  border-color: #bfdbfe;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, .12);
+  color: #1d4ed8;
+}
+.apna-home .apna-tab-icon {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  flex: 0 0 34px;
+  place-items: center;
+  border-radius: 10px;
+  background: #e8eef7;
+  color: #64748b;
+  font-size: .75rem;
+  transition: background .2s ease, color .2s ease;
+}
+.apna-home .apna-tab-nav .nav-link.active .apna-tab-icon {
+  background: linear-gradient(135deg, #2563eb, #0ea5e9);
+  color: #fff;
+}
+.apna-home .apna-tab-label {
+  display: grid;
+  gap: .12rem;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.apna-home .apna-tab-label strong {
+  color: inherit;
+  font-size: .76rem;
+  font-weight: 800;
+}
+.apna-home .apna-tab-label small {
+  color: #94a3b8;
+  font-size: .58rem;
+  font-weight: 600;
+}
+.apna-home .apna-tab-nav .nav-link:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, .2);
+  outline-offset: 2px;
+}
+.apna-home .product-grid {
+  margin-inline: 0;
+  padding: .35rem .15rem 1.15rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+  scrollbar-color: #bfdbfe transparent;
+}
+.apna-home .product-grid > * {
+  width: 20%;
+  min-width: 215px;
+  flex: 0 0 20%;
+  padding-inline: .55rem;
+  scroll-snap-align: start;
+}
+.apna-home .product-grid > :nth-child(n + 6) {
+  display: none;
+}
+.apna-home .product-item {
+  height: calc(100% - 12px);
+  margin-bottom: 12px;
+  padding: 13px;
+  border: 1px solid #e5ebf3;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, .055);
+  transition: border-color .25s ease, box-shadow .25s ease, transform .25s ease;
+}
+.apna-home .product-item:hover {
+  border-color: #bfdbfe;
+  box-shadow: 0 16px 38px rgba(37, 99, 235, .1);
+  transform: translateY(-3px);
+}
+.apna-home .product-item figure {
+  margin-bottom: .9rem !important;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #f8fafc, #eff6ff);
+  overflow: hidden;
+}
+.apna-home .product-item figure img {
+  width: 100%;
+  height: 170px;
+  max-height: 170px;
+  padding: 12px;
+  object-fit: contain;
+  transition: transform .35s ease;
+}
+.apna-home .product-item:hover figure img {
+  transform: scale(1.035);
+}
+.apna-home .product-item h3 {
+  min-height: 42px;
+  color: #172033;
+  font-size: .93rem;
+  line-height: 1.35;
+}
+.apna-home .product-item .qty,
+.apna-home .product-item .rating {
+  font-size: .68rem;
+}
+.apna-home .product-item .price {
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+.apna-home .product-item .btn-wishlist {
+  top: 16px;
+  right: 16px;
+  width: 38px;
+  height: 38px;
+  border-color: #e2e8f0;
+  box-shadow: 0 5px 16px rgba(15,23,42,.07);
+}
+.apna-home .products-carousel {
+  padding: .35rem .15rem 1.4rem;
+}
+.apna-home .products-carousel .swiper-slide {
+  height: auto;
+}
+.apna-home .swiper-buttons {
+  display: flex;
+  gap: .5rem;
+}
+.apna-home .swiper-prev,
+.apna-home .swiper-next {
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border-radius: 12px !important;
+}
+
+@media (max-width: 1199.98px) {
+  .apna-home .apna-trending-header { align-items: flex-start; flex-direction: column; gap: 1.5rem; }
+  .apna-home .apna-tab-nav { width: 100%; overflow-x: auto; padding-bottom: .25rem; }
+  .apna-home .apna-tab-nav .nav-tabs { width: max-content; min-width: 100%; }
+  .apna-home .product-grid > * { width: 25%; flex-basis: 25%; }
+}
+@media (max-width: 767.98px) {
+  .apna-home .apna-trending-header { padding: 1.25rem; border-radius: 20px; }
+  .apna-home .apna-tab-nav {
+    overflow: visible;
+    padding-bottom: 0;
+  }
+  .apna-home .apna-tab-nav .nav-tabs {
+    width: 100%;
+    min-width: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .3rem;
+  }
+  .apna-home .apna-tab-nav .nav-link {
+    width: 100%;
+    min-width: 0;
+    min-height: 72px;
+    padding: .55rem .35rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: .38rem;
+    text-align: center;
+    white-space: normal;
+  }
+  .apna-home .apna-tab-icon {
+    width: 29px;
+    height: 29px;
+    flex-basis: 29px;
+    border-radius: 8px;
+  }
+  .apna-home .apna-tab-label {
+    width: 100%;
+    white-space: normal;
+  }
+  .apna-home .apna-tab-label strong {
+    font-size: .66rem;
+    line-height: 1.2;
+  }
+  .apna-home .apna-tab-label small {
+    display: none;
+  }
+  .apna-home .section-header { align-items: flex-start; gap: 1rem; }
+  .apna-home .product-tabs .nav-tabs { width: 100%; overflow-x: auto; flex-wrap: nowrap; }
+  .apna-home .apna-tab-nav .nav-tabs { overflow: visible; }
+  .apna-home .product-tabs .nav-tabs .nav-link { white-space: nowrap; }
+  .apna-home .apna-tab-nav .nav-link { white-space: normal; }
+  .apna-home .product-grid > * { width: 76%; min-width: 240px; flex-basis: 76%; }
+}
+
+/* ApnaMart service promise */
+.apna-home .working-steps {
+  padding-block: clamp(4rem, 7vw, 6.5rem) !important;
+  border-top: 1px solid #e5edf7;
+  background:
+    radial-gradient(circle at 5% 20%, rgba(37, 99, 235, .08), transparent 24%),
+    radial-gradient(circle at 95% 90%, rgba(14, 165, 233, .07), transparent 22%),
+    #f8fbff;
+}
+.apna-home .apna-benefits-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2.3rem;
+}
+.apna-home .apna-benefits-heading h2 {
+  max-width: 650px;
+  margin: 0;
+  color: #0f172a;
+  font: 800 clamp(2rem, 4vw, 3.25rem)/1.04 "Nunito", sans-serif;
+  letter-spacing: -.055em;
+}
+.apna-home .apna-benefits-heading > p {
+  max-width: 475px;
+  margin: 0;
+  color: #64748b;
+  font-size: .86rem;
+  line-height: 1.75;
+}
+.apna-home .apna-benefit-grid {
+  counter-reset: apna-benefit;
+}
+.apna-home .apna-benefit-grid > .col {
+  counter-increment: apna-benefit;
+}
+.apna-home .working-steps .card {
+  height: 100%;
+  min-height: 210px;
+  margin: 0 !important;
+  padding: 1.25rem;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .94);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, .045);
+  overflow: hidden;
+  position: relative;
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+.apna-home .working-steps .card::after {
+  content: "0" counter(apna-benefit);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #cbd5e1;
+  font: 800 .62rem "Nunito", sans-serif;
+  letter-spacing: .1em;
+}
+.apna-home .working-steps .card:hover {
+  border-color: #bfdbfe !important;
+  box-shadow: 0 18px 42px rgba(37, 99, 235, .1);
+  transform: translateY(-4px);
+}
+.apna-home .working-steps .card > .row {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 0;
+}
+.apna-home .working-steps .card > .row > div {
+  width: 100%;
+  padding: 0;
+}
+.apna-home .working-steps .card > .row > .text-dark {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  margin-bottom: 1.35rem;
+  place-items: center;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #2563eb, #0ea5e9);
+  box-shadow: 0 10px 22px rgba(37, 99, 235, .19);
+  color: #fff !important;
+}
+.apna-home .working-steps .card svg {
+  width: 23px;
+  height: 23px;
+}
+.apna-home .working-steps .card h5 {
+  min-height: 42px;
+  margin: 0 0 .55rem;
+  color: #172033;
+  font: 800 .94rem/1.35 "Nunito", sans-serif;
+}
+.apna-home .working-steps .card-text {
+  margin: 0;
+  color: #718096;
+  font-size: .72rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 991.98px) {
+  .apna-home .apna-benefits-heading { align-items: flex-start; flex-direction: column; }
+  .apna-home .working-steps .card { min-height: 195px; }
+}
+@media (max-width: 575.98px) {
+  .apna-home .apna-benefits-heading { margin-bottom: 1.6rem; }
+  .apna-home .working-steps .card { min-height: auto; }
+}
+
+/* Shared homepage typography and responsive rhythm */
+.apna-home .section-title,
+.apna-home .apna-trending-intro h2,
+.apna-home .apna-benefits-heading h2,
+.apna-home section > .container-fluid > h2,
+.apna-home section > .container-fluid > .row > [class*="col-"] > h2 {
+  font-size: var(--apna-section-heading-size) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -.045em !important;
+}
+.apna-home p {
+  font-size: var(--apna-paragraph-size) !important;
+  line-height: var(--apna-paragraph-leading) !important;
+}
+.apna-home img,
+.apna-home svg {
+  max-width: 100%;
+}
+.apna-home section,
+.apna-home footer {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 991.98px) {
+  .apna-home .container-fluid { padding-inline: 1.5rem; }
+  .apna-home .section-header { flex-wrap: wrap; }
+  .apna-home .banner-ad.large { min-height: auto; }
+}
+@media (max-width: 575.98px) {
+  :root {
+    --apna-section-heading-size: 2rem;
+    --apna-paragraph-size: .875rem;
+  }
+  .apna-home .container-fluid { padding-inline: 1rem; }
+  .apna-home .section-header { margin-block: 1.75rem !important; }
+  .apna-home .section-header .btn,
+  .apna-home .section-header nav { max-width: 100%; }
+  .apna-home .working-steps,
+  .apna-home #trending-products { padding-block: 3.25rem !important; }
+  .apna-home footer .row { row-gap: 2rem; }
+}
+
+/* Compact mobile header actions */
+.apna-mobile-menu-toggle {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-inline: .25rem;
+  padding: 0;
+  border: 1px solid #eaf0f7;
+  border-radius: 50%;
+  background: #f8fafc;
+  color: #0f172a;
+}
+.apna-mobile-menu-toggle span {
+  width: 17px;
+  height: 2px;
+  display: block;
+  border-radius: 99px;
+  background: currentColor;
+}
+.apna-mobile-menu-toggle:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, .18);
+  outline-offset: 2px;
+}
+.apna-header-cart-button {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  gap: .7rem;
+  padding: .35rem .8rem .35rem .4rem;
+  border: 1px solid #edf2f7;
+  border-radius: 14px;
+  background: #fff;
+  color: #0f172a;
+  box-shadow: 0 7px 20px rgba(15, 23, 42, .04);
+  transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+.apna-header-cart-button:hover {
+  border-color: #dbeafe;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, .09);
+  transform: translateY(-1px);
+}
+.apna-header-cart-button:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, .18);
+  outline-offset: 2px;
+}
+.apna-header-cart-icon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  background: #eff6ff;
+  color: #2563eb;
+  position: relative;
+}
+.apna-header-cart-count {
+  min-width: 18px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  padding-inline: 4px;
+  border: 2px solid #fff;
+  border-radius: 999px;
+  background: #2563eb;
+  color: #fff;
+  font-size: .55rem;
+  font-weight: 800;
+  line-height: 1;
+}
+.apna-header-cart-button .cart-total {
+  color: #0f172a;
+  font: 800 .82rem "Nunito", sans-serif;
+  white-space: nowrap;
+}
+.apna-quick-tools {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: .5rem;
+  margin-left: auto;
+}
+.apna-quick-search {
+  min-width: 175px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: 0 .75rem;
+  border: 1px solid #edf2f7;
+  border-radius: 10px;
+  background: #f8fafc;
+  color: #64748b;
+}
+.apna-quick-search input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #0f172a;
+  font-size: .72rem;
+}
+.apna-quick-tools select {
+  height: 42px;
+  padding: 0 1.9rem 0 .7rem;
+  border: 1px solid #edf2f7;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #526176;
+  font-size: .69rem;
+}
+.apna-quick-tools .btn {
+  min-height: 42px !important;
+}
+.apna-filter-clear {
+  height: 42px;
+  padding: 0 .35rem;
+  border: 0;
+  background: transparent;
+  color: #64748b;
+  font-size: .68rem;
+  font-weight: 700;
+}
+.apna-filter-clear:hover { color: #2563eb; }
+.apna-filter-status {
+  position: absolute;
+  transform: translateY(32px);
+  color: #64748b;
+  font-size: .6rem;
+}
+@media (max-width: 1199.98px) and (min-width: 992px) {
+  .apna-quick-search { min-width: 145px; }
+  .apna-quick-tools select,
+  .apna-filter-clear,
+  .apna-filter-status { display: none; }
+}
+@media (max-width: 991.98px) {
+  .apna-home header > .container-fluid:last-child { height: auto; }
+  .apna-home header > .container-fluid:last-child > .row {
+    padding-block: .65rem !important;
+  }
+  .apna-home header > .container-fluid:last-child .main-menu {
+    padding: 0;
+  }
+  .apna-home header .row.border-bottom > [class*="col-"]:last-child {
+    gap: .35rem !important;
+  }
+  .apna-home header .row.border-bottom ul {
+    align-items: center;
+  }
+  .apna-home header > .container-fluid:last-child .d-flex {
+    width: 100%;
+  }
+  .apna-home header > .container-fluid:last-child .main-menu {
+    width: 0;
+  }
+  .apna-quick-tools {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    margin: 0;
+  }
+  .apna-quick-search { min-width: 0; }
+  .apna-quick-tools [data-filter-price],
+  .apna-filter-clear,
+  .apna-filter-status { display: none; }
+}
+@media (max-width: 575.98px) {
+  .apna-quick-tools {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+  .apna-quick-tools [data-filter-category] { display: none; }
+}
+@media (max-width: 575.98px) {
+  .apna-home header .row.border-bottom {
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-block: .75rem !important;
+  }
+  .apna-home header .row.border-bottom > [class*="col-"]:first-child {
+    width: auto;
+    flex: 0 0 auto;
+    text-align: left !important;
+  }
+  .apna-home header .row.border-bottom > [class*="col-"]:last-child {
+    width: auto;
+    flex: 1 1 auto;
+    margin-top: 0 !important;
+    justify-content: flex-end !important;
+  }
+  .apna-home header .row.border-bottom ul > li:nth-child(-n + 2) {
+    display: none;
+  }
+  .apna-home header .row.border-bottom ul a,
+  .apna-mobile-menu-toggle {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Softer desktop borders */
+@media (min-width: 992px) {
+  .apna-home {
+    --bs-border-color: #edf2f7;
+  }
+  .apna-home header .border-bottom {
+    border-color: #f1f5f9 !important;
+  }
+  .apna-home .search-bar,
+  .apna-home .product-item,
+  .apna-home .category-item,
+.apna-home .brand-carousel .card,
+  .apna-home .apna-trending-header,
+  .apna-home .working-steps .card,
+  .apna-home footer {
+    border-color: #edf2f7 !important;
+  }
+  .apna-home .search-bar {
+    box-shadow: 0 7px 22px rgba(15, 23, 42, .025);
+  }
+}
+
+/* Compact Newly Arrived Brands card typography */
+.apna-home .brand-carousel .card .card-title {
+  margin: .2rem 0 0;
+  font: 700 .86rem/1.35 "Nunito", sans-serif;
+  letter-spacing: -.015em;
+}
+.apna-home .brand-carousel .card p {
+  font-size: .68rem !important;
+  line-height: 1.45 !important;
+}
+.apna-home .brand-carousel .card .card-body {
+  padding-inline: .75rem;
+}
+
+@media (max-width: 575.98px) {
+  .apna-home .brand-carousel .card {
+    padding: .7rem !important;
+  }
+  .apna-home .brand-carousel .card .card-body {
+    padding: .6rem 0 0 !important;
+    text-align: center;
+  }
+  .apna-home .brand-carousel .card .card-title {
+    font-size: .74rem;
+    line-height: 1.3;
+  }
+  .apna-home .brand-carousel .card p {
+    font-size: .6rem !important;
+  }
+}
+
+/* Compact homepage spacing on phones and tablets */
+@media (max-width: 767.98px) {
+  .apna-home section.py-5,
+  .apna-home #trending-products,
+  .apna-home .working-steps {
+    padding-block: 2.75rem !important;
+  }
+  .apna-home section.py-3 {
+    padding-block: 1.25rem !important;
+  }
+  .apna-home section.my-5 {
+    margin-block: 0 !important;
+  }
+  .apna-home section .my-5,
+  .apna-home .section-header {
+    margin-block: 1.5rem !important;
+  }
+  .apna-home .apna-trending-header,
+  .apna-home .apna-benefits-heading {
+    margin-bottom: 1.5rem !important;
+  }
+  .apna-home section .p-5 {
+    padding: 1.5rem !important;
+  }
+  .apna-home .products-carousel,
+  .apna-home .product-grid {
+    padding-bottom: .75rem;
+  }
+  .apna-home .product-item {
+    margin-bottom: 6px;
+  }
+}
+@media (max-width: 575.98px) {
+  .apna-home {
+    --apna-section-heading-size: 1.7rem;
+    --apna-paragraph-size: .8rem;
+    font-size: .875rem;
+  }
+  .apna-home .apnamart-logo {
+    font-size: 1.72rem;
+  }
+  .apna-home .apna-main-banner h3,
+  .apna-home .apna-main-banner .display-4 {
+    font-size: clamp(1.9rem, 9vw, 2.3rem) !important;
+    line-height: 1.04;
+  }
+  .apna-home .banner-ad:not(.large) .banner-title,
+  .apna-home .banner-title {
+    font-size: 1.45rem !important;
+    line-height: 1.12;
+  }
+  .apna-home .section-title,
+  .apna-home .apna-trending-intro h2,
+  .apna-home .apna-benefits-heading h2 {
+    font-size: 1.7rem !important;
+  }
+  .apna-home .product-item h3 {
+    min-height: 36px;
+    font-size: .84rem;
+  }
+  .apna-home .product-item .price {
+    font-size: 1.02rem;
+  }
+  .apna-home .product-item .qty,
+  .apna-home .product-item .rating,
+  .apna-home .apna-section-eyebrow,
+  .apna-home .categories {
+    font-size: .62rem !important;
+  }
+  .apna-home .btn,
+  .apna-home button,
+  .apna-home .nav-link {
+    font-size: .72rem;
+  }
+  .apna-home .product-item .nav-link {
+    min-height: 38px;
+    padding: .58rem .72rem !important;
+    font-size: .72rem;
+  }
+  .apna-home .category-title,
+  .apna-home .post-title {
+    font-size: .9rem;
+  }
+  .apna-home .category-carousel .category-title {
+    margin-top: .65rem;
+    font-size: .74rem;
+    line-height: 1.3;
+  }
+  .apna-home .apna-benefit-grid h5 {
+    min-height: auto;
+    font-size: .84rem;
+  }
+  .apna-home section.py-5,
+  .apna-home #trending-products,
+  .apna-home .working-steps {
+    padding-block: 2.25rem !important;
+  }
+  .apna-home section .my-5,
+  .apna-home .section-header {
+    margin-block: 1.2rem !important;
+  }
+  .apna-home .apna-trending-header {
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .apna-home .apna-benefits-heading {
+    gap: .85rem;
+    margin-bottom: 1.2rem !important;
+  }
+  .apna-home section .p-5 {
+    padding: 1.15rem !important;
+  }
+  .apna-home .row.g-5 {
+    --bs-gutter-y: 1.5rem;
+  }
+}
+
+/* Mobile-only sale card layout */
+@media (max-width: 767.98px) {
+  .apna-home #sale .row {
+    --bs-gutter-y: .85rem;
+  }
+  .apna-home #sale .col-md-6 {
+    display: flex;
+  }
+  .apna-home #sale .banner-ad {
+    width: 100%;
+    min-height: 205px;
+    margin-bottom: 0 !important;
+    border: 1px solid rgba(219, 234, 254, .8);
+    border-radius: 20px;
+    background-position: 96% 76% !important;
+    background-size: 42% auto !important;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, .065);
+    isolation: isolate;
+  }
+  .apna-home #sale .banner-ad::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: linear-gradient(90deg, rgba(255,255,255,.74) 0 54%, rgba(255,255,255,.2) 72%, transparent 100%);
+    pointer-events: none;
+  }
+  .apna-home #sale .banner-content {
+    width: 66%;
+    min-height: 205px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1.25rem !important;
+    position: relative;
+    z-index: 1;
+  }
+  .apna-home #sale .categories {
+    display: inline-flex;
+    margin-bottom: .55rem;
+    padding: .35rem .58rem;
+    border: 1px solid rgba(37, 99, 235, .12);
+    border-radius: 999px;
+    background: rgba(255,255,255,.78);
+    color: #1d4ed8 !important;
+    font-family: "Open Sans", sans-serif;
+    font-size: .62rem !important;
+    font-weight: 800 !important;
+    letter-spacing: .05em;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .apna-home #sale .banner-title {
+    max-width: 180px;
+    margin: 0 0 .45rem;
+    color: #0f172a;
+    font-size: 1.28rem !important;
+    line-height: 1.08;
+    letter-spacing: -.035em;
+  }
+  .apna-home #sale p {
+    display: -webkit-box;
+    margin: 0 0 .75rem;
+    overflow: hidden;
+    color: #526176;
+    font-size: .7rem !important;
+    line-height: 1.5 !important;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .apna-home #sale .btn {
+    min-height: 34px;
+    padding: .55rem .8rem;
+    border-radius: 9px;
+    font-size: .62rem;
+    letter-spacing: .04em;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .apna-home #sale .banner-ad,
+  .apna-home #sale .banner-content {
+    min-height: 190px;
+  }
+  .apna-home #sale .banner-ad {
+    background-size: 38% auto !important;
+  }
+  .apna-home #sale .banner-content {
+    width: 70%;
+    padding: 1rem !important;
+  }
+}
+
+/* Consistent action buttons across desktop and mobile */
+.apna-home .btn:not(.swiper-prev):not(.swiper-next):not(.btn-wishlist):not(.btn-number):not(.rounded-circle),
+.apna-home .product-item .nav-link {
+  min-height: 44px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .45rem;
+  padding: .72rem 1rem !important;
+  border-radius: 10px !important;
+  font-size: .76rem !important;
+  font-weight: 700 !important;
+  line-height: 1.15 !important;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+.apna-home .btn:not(.swiper-prev):not(.swiper-next):not(.btn-wishlist):not(.btn-number):not(.rounded-circle):hover,
+.apna-home .product-item .nav-link:hover {
+  transform: translateY(-1px);
+}
+.apna-home .btn:not(.swiper-prev):not(.swiper-next):not(.btn-wishlist):not(.btn-number):not(.rounded-circle):focus-visible,
+.apna-home .product-item .nav-link:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, .2);
+  outline-offset: 2px;
+}
