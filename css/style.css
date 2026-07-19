@@ -2182,15 +2182,23 @@ footer form[role="newsletter"] .btn {
 .apna-filter-clear:hover { color: #2563eb; }
 .apna-filter-status {
   position: absolute;
-  transform: translateY(32px);
+  top: calc(100% + 3px);
+  right: 0;
   color: #64748b;
   font-size: .6rem;
+  line-height: 1.2;
+  white-space: nowrap;
 }
-@media (max-width: 1199.98px) and (min-width: 992px) {
+@media (max-width: 1399.98px) and (min-width: 992px) {
   .apna-quick-search { min-width: 145px; }
   .apna-quick-tools select,
   .apna-filter-clear,
   .apna-filter-status { display: none; }
+  .apna-home .apna-department-toggle { min-width: 195px; }
+  .apna-home .apna-main-links {
+    gap: .85rem;
+    margin-inline: 1rem;
+  }
 }
 @media (max-width: 991.98px) {
   .apna-home header > .container-fluid:last-child { height: auto; }
@@ -2499,6 +2507,7 @@ footer form[role="newsletter"] .btn {
     line-height: 1.5 !important;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
   }
   .apna-home #sale .btn {
     min-height: 34px;
