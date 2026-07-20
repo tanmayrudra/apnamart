@@ -255,7 +255,7 @@
     $('.section-header .btn-link').attr('href', '#category-section');
     $('#latest-blog a[href="#"]').attr('href', 'journals.html');
     $('.apna-login-link').attr('href', 'support.html');
-    $('header a:has(use[xlink\\:href="#user"])').attr('href', 'support.html');
+    $('header a:has(use[xlink\\:href="#user"])').attr('href', 'login.html');
     $('header a:has(use[xlink\\:href="#heart"])').attr('href', 'product-details.html');
     $('.banner-ad .btn[href="#"]').attr('href', 'product-details.html');
     $('a.btn-warning[href="#"]').attr('href', '#trending-products');
@@ -296,6 +296,32 @@
     });
   };
 
+  var initSectionReveal = function() {
+    var sections = document.querySelectorAll('body.apna-home > section:not(.apna-classic-hero)');
+    if (!sections.length) return;
+
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduceMotion || !('IntersectionObserver' in window)) {
+      sections.forEach(function(section) { section.classList.add('apna-section-visible'); });
+      return;
+    }
+
+    sections.forEach(function(section) { section.classList.add('apna-scroll-section'); });
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('apna-section-visible');
+        observer.unobserve(entry.target);
+      });
+    }, {
+      threshold: 0.08,
+      rootMargin: '0px 0px -6% 0px'
+    });
+
+    sections.forEach(function(section) { observer.observe(section); });
+  };
+
   // init jarallax parallax
   var initJarallax = function() {
     jarallax(document.querySelectorAll(".jarallax"));
@@ -313,6 +339,7 @@
     initApnaCart();
     initPageRoutes();
     initProductFilter();
+    initSectionReveal();
     initJarallax();
     initChocolat();
 

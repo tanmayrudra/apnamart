@@ -175,9 +175,11 @@
           class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
           
 
-          <ul class="d-flex justify-content-end list-unstyled m-0">
-            <li>
-              <a href="#" class="rounded-circle bg-light p-2 mx-1">
+          <ul class="apna-auth-nav d-flex justify-content-end align-items-center list-unstyled m-0">
+            <li class="d-none d-lg-block"><a href="login.html" class="apna-header-login">Log in</a></li>
+            <li class="d-none d-lg-block"><a href="signup.html" class="apna-header-signup">Sign up <span>→</span></a></li>
+            <li class="d-lg-none">
+              <a href="login.html" class="rounded-circle bg-light p-2 mx-1" aria-label="Log in">
                 <svg width="24" height="24" viewBox="0 0 24 24">
                   <use xlink:href="#user"></use>
                 </svg>
@@ -241,13 +243,23 @@
                   <div class="swiper-slide">
                     <div class="row banner-content p-5">
                       <div class="content-wrapper col-md-7">
-                        <div class="categories my-3 apna-hero-eyebrow">✦ 100% natural</div>
-                        <h3 class="display-4">Fresh Smoothie & Summer Juice</h3>
-                        <p>Fresh, naturally refreshing juice for breakfast, breaks, and sunny afternoons.</p>
-                        <a href="product-details.html" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1 px-4 py-3 mt-3">Shop Now</a>
+                        <div class="categories my-3 apna-hero-eyebrow"><span></span> Fresh picks, delivered daily</div>
+                        <h3 class="display-4">Your daily grocery run, <em>made delightful.</em></h3>
+                        <p>Farm-fresh produce, pantry favourites and everyday essentials delivered to your door—at prices that feel just right.</p>
+                        <div class="apna-hero-actions">
+                          <a href="#trending-products" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1 px-4 py-3">Start Shopping <span aria-hidden="true">→</span></a>
+                          <a href="#category-section" class="apna-hero-text-link">Explore categories</a>
+                        </div>
+                        <div class="apna-hero-proof" aria-label="Shopping benefits">
+                          <div><strong>10 min</strong><span>Quick delivery</span></div>
+                          <div><strong>4.9 ★</strong><span>50k+ happy homes</span></div>
+                          <div><strong>₹0</strong><span>Hidden charges</span></div>
+                        </div>
                       </div>
                       <div class="img-wrapper col-md-5">
                         <img loading="eager" decoding="async" fetchpriority="high" src="assets/images/apnamart-product-thumb-1.png" class="img-fluid" alt="Fresh smoothie and juice">
+                        <span class="apna-hero-float apna-hero-float-top">🌿 <b>100% fresh</b></span>
+                        <span class="apna-hero-float apna-hero-float-bottom"><b>20% OFF</b> on first order</span>
                       </div>
                     </div>
                   </div>
@@ -285,9 +297,11 @@
             <div class="banner-ad bg-success-subtle block-2 apna-promo-card apna-fruit-card" style="background-image:url('assets/images/apnamart-thumb-bananas.png');background-repeat:no-repeat;background-position:92% 55%;background-size:42% auto">
               <div class="row banner-content p-5">
                 <div class="content-wrapper col-md-7">
-                  <div class="categories sale mb-3 pb-3">20% off</div>
+                  <div class="apna-card-kicker">Farm to basket</div>
+                  <div class="categories sale mb-3 pb-3">Save 20%</div>
                   <h3 class="banner-title">Fruits & Vegetables</h3>
-                  <a href="#category-section" class="d-flex align-items-center nav-link">Shop Collection <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
+                  <p>Colourful, crisp and picked for today.</p>
+                  <a href="#category-section" class="d-flex align-items-center nav-link">Shop fresh <span class="apna-card-arrow"><svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></span></a>
                 </div>
               </div>
             </div>
@@ -295,9 +309,11 @@
             <div class="banner-ad bg-danger block-3 apna-promo-card apna-bakery-card" style="background-image:url('assets/images/apnamart-thumb-biscuits.png');background-repeat:no-repeat;background-position:92% 55%;background-size:44% auto">
               <div class="row banner-content p-5">
                 <div class="content-wrapper col-md-7">
-                  <div class="categories sale mb-3 pb-3">15% off</div>
+                  <div class="apna-card-kicker">Tea-time favourites</div>
+                  <div class="categories sale mb-3 pb-3">Save 15%</div>
                   <h3 class="item-title">Baked Products</h3>
-                  <a href="#category-section" class="d-flex align-items-center nav-link">Shop Collection <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
+                  <p>Golden, crunchy treats for every craving.</p>
+                  <a href="#category-section" class="d-flex align-items-center nav-link">Explore bakery <span class="apna-card-arrow"><svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></span></a>
                 </div>
               </div>
             </div>
@@ -312,11 +328,15 @@
       <div class="row">
         <div class="col-md-12">
 
-          <div class="section-header d-flex flex-wrap justify-content-between mb-5">
-            <h2 class="section-title">Category</h2>
+          <div class="section-header apna-category-header d-flex flex-wrap justify-content-between mb-5">
+            <div>
+              <span class="apna-section-eyebrow">Shop your way</span>
+              <h2 class="section-title">Browse everyday favourites</h2>
+              <p>Everything your home needs, neatly sorted and ready to deliver.</p>
+            </div>
 
             <div class="d-flex align-items-center">
-              <a href="#" class="btn-link text-decoration-none">View All Categories →</a>
+              <a href="#trending-products" class="btn-link text-decoration-none">Explore all <span>→</span></a>
               <div class="swiper-buttons">
                 <button class="swiper-prev category-carousel-prev btn btn-yellow">❮</button>
                 <button class="swiper-next category-carousel-next btn btn-yellow">❯</button>
@@ -332,64 +352,76 @@
           <div class="category-carousel swiper">
             <div class="swiper-wrapper">
               <a href="index.html" class="nav-link category-item swiper-slide">
-                <img loading="lazy" decoding="async" src="assets/images/apnamart-icon-vegetables-broccoli.png"
-                  alt="Category Thumbnail">
-                <h3 class="category-title">Fruits & Veges</h3>
+                <span class="apna-category-art"><img loading="lazy" decoding="async" src="assets/images/apnamart-icon-vegetables-broccoli.png" alt="Fresh vegetables"></span>
+                <span class="apna-category-count">120+ items</span>
+                <h3 class="category-title">Fresh Produce</h3>
+                <span class="apna-category-link">Explore <b>↗</b></span>
               </a>
               <a href="index.html" class="nav-link category-item swiper-slide">
-                <img loading="lazy" decoding="async" src="assets/images/apnamart-icon-bread-baguette.png"
-                  alt="Category Thumbnail">
-                <h3 class="category-title">Breads & Sweets</h3>
+                <span class="apna-category-art"><img loading="lazy" decoding="async" src="assets/images/apnamart-icon-bread-baguette.png" alt="Fresh bread"></span>
+                <span class="apna-category-count">80+ items</span>
+                <h3 class="category-title">Bakery & Sweets</h3>
+                <span class="apna-category-link">Explore <b>↗</b></span>
               </a>
               <a href="index.html" class="nav-link category-item swiper-slide">
-                <img loading="lazy" decoding="async" src="assets/images/apnamart-icon-soft-drinks-bottle.png"
-                  alt="Category Thumbnail">
-                <h3 class="category-title">Fruits & Veges</h3>
+                <span class="apna-category-art"><img loading="lazy" decoding="async" src="assets/images/apnamart-icon-soft-drinks-bottle.png" alt="Cold drink bottle"></span>
+                <span class="apna-category-count">65+ items</span>
+                <h3 class="category-title">Cold Beverages</h3>
+                <span class="apna-category-link">Explore <b>↗</b></span>
               </a>
               <a href="index.html" class="nav-link category-item swiper-slide">
-                <img loading="lazy" decoding="async" src="assets/images/apnamart-icon-wine-glass-bottle.png"
-                  alt="Category Thumbnail">
-                <h3 class="category-title">Fruits & Veges</h3>
+                <span class="apna-category-art"><img loading="lazy" decoding="async" src="assets/images/apnamart-icon-wine-glass-bottle.png" alt="Juice bottle and glass"></span>
+                <span class="apna-category-count">40+ items</span>
+                <h3 class="category-title">Juices & Drinks</h3>
+                <span class="apna-category-link">Explore <b>↗</b></span>
               </a>
               <a href="index.html" class="nav-link category-item swiper-slide">
-                <img loading="lazy" decoding="async" src="assets/images/apnamart-icon-animal-products-drumsticks.png"
-                  alt="Category Thumbnail">
-                <h3 class="category-title">Fruits & Veges</h3>
+                <span class="apna-category-art"><img loading="lazy" decoding="async" src="assets/images/apnamart-icon-animal-products-drumsticks.png" alt="Protein and meat"></span>
+                <span class="apna-category-count">55+ items</span>
+                <h3 class="category-title">Meat & Protein</h3>
+                <span class="apna-category-link">Explore <b>↗</b></span>
               </a>
               <a href="index.html" class="nav-link category-item swiper-slide">
-                <img loading="lazy" decoding="async" src="assets/images/apnamart-icon-bread-herb-flour.png"
-                  alt="Category Thumbnail">
-                <h3 class="category-title">Fruits & Veges</h3>
+                <span class="apna-category-art"><img loading="lazy" decoding="async" src="assets/images/apnamart-icon-bread-herb-flour.png" alt="Flour and pantry staples"></span>
+                <span class="apna-category-count">150+ items</span>
+                <h3 class="category-title">Pantry Staples</h3>
+                <span class="apna-category-link">Explore <b>↗</b></span>
               </a>
               <a href="index.html" class="nav-link category-item swiper-slide">
-                <img loading="lazy" decoding="async" src="assets/images/apnamart-icon-vegetables-broccoli.png"
-                  alt="Category Thumbnail">
-                <h3 class="category-title">Fruits & Veges</h3>
+                <span class="apna-category-art"><img loading="lazy" decoding="async" src="assets/images/apnamart-thumb-milk.png" alt="Fresh milk"></span>
+                <span class="apna-category-count">75+ items</span>
+                <h3 class="category-title">Dairy & Breakfast</h3>
+                <span class="apna-category-link">Explore <b>↗</b></span>
               </a>
               <a href="index.html" class="nav-link category-item swiper-slide">
-                <img loading="lazy" decoding="async" src="assets/images/apnamart-icon-vegetables-broccoli.png"
-                  alt="Category Thumbnail">
-                <h3 class="category-title">Fruits & Veges</h3>
+                <span class="apna-category-art"><img loading="lazy" decoding="async" src="assets/images/apnamart-thumb-biscuits.png" alt="Biscuits and snacks"></span>
+                <span class="apna-category-count">95+ items</span>
+                <h3 class="category-title">Snacks & Munchies</h3>
+                <span class="apna-category-link">Explore <b>↗</b></span>
               </a>
               <a href="index.html" class="nav-link category-item swiper-slide">
-                <img loading="lazy" decoding="async" src="assets/images/apnamart-icon-vegetables-broccoli.png"
-                  alt="Category Thumbnail">
-                <h3 class="category-title">Fruits & Veges</h3>
+                <span class="apna-category-art"><img loading="lazy" decoding="async" src="assets/images/apnamart-thumb-tomatoketchup.png" alt="Sauces and condiments"></span>
+                <span class="apna-category-count">45+ items</span>
+                <h3 class="category-title">Sauces & Spreads</h3>
+                <span class="apna-category-link">Explore <b>↗</b></span>
               </a>
               <a href="index.html" class="nav-link category-item swiper-slide">
-                <img loading="lazy" decoding="async" src="assets/images/apnamart-icon-vegetables-broccoli.png"
-                  alt="Category Thumbnail">
-                <h3 class="category-title">Fruits & Veges</h3>
+                <span class="apna-category-art"><img loading="lazy" decoding="async" src="assets/images/apnamart-thumb-orange-juice.png" alt="Orange juice"></span>
+                <span class="apna-category-count">60+ items</span>
+                <h3 class="category-title">Healthy Sips</h3>
+                <span class="apna-category-link">Explore <b>↗</b></span>
               </a>
               <a href="index.html" class="nav-link category-item swiper-slide">
-                <img loading="lazy" decoding="async" src="assets/images/apnamart-icon-vegetables-broccoli.png"
-                  alt="Category Thumbnail">
-                <h3 class="category-title">Fruits & Veges</h3>
+                <span class="apna-category-art"><img loading="lazy" decoding="async" src="assets/images/apnamart-thumb-bananas.png" alt="Fresh bananas"></span>
+                <span class="apna-category-count">90+ items</span>
+                <h3 class="category-title">Fresh Fruits</h3>
+                <span class="apna-category-link">Explore <b>↗</b></span>
               </a>
               <a href="index.html" class="nav-link category-item swiper-slide">
-                <img loading="lazy" decoding="async" src="assets/images/apnamart-icon-vegetables-broccoli.png"
-                  alt="Category Thumbnail">
-                <h3 class="category-title">Fruits & Veges</h3>
+                <span class="apna-category-art"><img loading="lazy" decoding="async" src="assets/images/apnamart-thumb-cucumber.png" alt="Cucumber and healthy food"></span>
+                <span class="apna-category-count">110+ items</span>
+                <h3 class="category-title">Healthy Choices</h3>
+                <span class="apna-category-link">Explore <b>↗</b></span>
               </a>
 
             </div>
@@ -401,17 +433,25 @@
   </section>
 
 
-  <section class="py-5 overflow-hidden">
+  <section class="py-5 overflow-hidden apna-brand-showcase">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
 
-          <div class="section-header d-flex flex-wrap flex-wrap justify-content-between mb-5">
-
-            <h2 class="section-title">Newly Arrived Brands</h2>
+          <div class="section-header apna-brand-header d-flex flex-wrap justify-content-between mb-5">
+            <div class="apna-brand-heading">
+              <span class="apna-section-eyebrow"><span></span> Trusted across India</span>
+              <h2 class="section-title">The nation’s favourite brands,<br><em>all in one basket.</em></h2>
+              <p>Discover quality-led names chosen for Indian homes and delivered with the care you expect from ApnaMart.</p>
+              <div class="apna-brand-trust" aria-label="ApnaMart service highlights">
+                <span><b>✓</b> Quality checked</span>
+                <span><b>✓</b> Authentic products</span>
+                <span><b>✓</b> Doorstep delivery</span>
+              </div>
+            </div>
 
             <div class="d-flex align-items-center">
-              <a href="#" class="btn-link text-decoration-none">View All Categories →</a>
+              <a href="#trending-products" class="btn-link text-decoration-none">View all brands <span>→</span></a>
               <div class="swiper-buttons">
                 <button class="swiper-prev brand-carousel-prev btn btn-yellow">❮</button>
                 <button class="swiper-next brand-carousel-next btn btn-yellow">❯</button>
@@ -428,96 +468,108 @@
             <div class="swiper-wrapper">
 
               <div class="swiper-slide">
-                <div class="card mb-3 p-3 rounded-4 shadow border-0">
+                <div class="card apna-provider-card mb-3 p-3 rounded-4 shadow border-0">
                   <div class="row g-0">
                     <div class="col-md-4">
                       <img loading="lazy" decoding="async" src="assets/images/apnamart-product-thumb-11.jpg"
-                        class="img-fluid rounded" alt="Card title">
+                        class="img-fluid rounded" alt="Nature's Gold honey">
                     </div>
                     <div class="col-md-8">
                       <div class="card-body py-0">
-                        <p class="text-muted mb-0">Amber Jar</p>
-                        <h5 class="card-title">Honey best nectar you wish to get</h5>
+                        <span class="apna-brand-verified">✓ Verified brand</span>
+                        <p class="text-muted mb-0">Nature’s Gold</p>
+                        <h5 class="card-title">Pure Forest Honey</h5>
+                        <span class="apna-brand-shop">Shop brand <b>↗</b></span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card mb-3 p-3 rounded-4 shadow border-0">
+                <div class="card apna-provider-card mb-3 p-3 rounded-4 shadow border-0">
                   <div class="row g-0">
                     <div class="col-md-4">
                       <img loading="lazy" decoding="async" src="assets/images/apnamart-product-thumb-12.jpg"
-                        class="img-fluid rounded" alt="Card title">
+                        class="img-fluid rounded" alt="Harvest Table pasta">
                     </div>
                     <div class="col-md-8">
                       <div class="card-body py-0">
-                        <p class="text-muted mb-0">Amber Jar</p>
-                        <h5 class="card-title">Honey best nectar you wish to get</h5>
+                        <span class="apna-brand-verified">✓ Verified brand</span>
+                        <p class="text-muted mb-0">Harvest Table</p>
+                        <h5 class="card-title">Kitchen Essentials</h5>
+                        <span class="apna-brand-shop">Shop brand <b>↗</b></span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card mb-3 p-3 rounded-4 shadow border-0">
+                <div class="card apna-provider-card mb-3 p-3 rounded-4 shadow border-0">
                   <div class="row g-0">
                     <div class="col-md-4">
                       <img loading="lazy" decoding="async" src="assets/images/apnamart-product-thumb-13.jpg"
-                        class="img-fluid rounded" alt="Card title">
+                        class="img-fluid rounded" alt="Green Valley organic product">
                     </div>
                     <div class="col-md-8">
                       <div class="card-body py-0">
-                        <p class="text-muted mb-0">Amber Jar</p>
-                        <h5 class="card-title">Honey best nectar you wish to get</h5>
+                        <span class="apna-brand-verified">✓ Verified brand</span>
+                        <p class="text-muted mb-0">Green Valley</p>
+                        <h5 class="card-title">Organic Favourites</h5>
+                        <span class="apna-brand-shop">Shop brand <b>↗</b></span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card mb-3 p-3 rounded-4 shadow border-0">
+                <div class="card apna-provider-card mb-3 p-3 rounded-4 shadow border-0">
                   <div class="row g-0">
                     <div class="col-md-4">
                       <img loading="lazy" decoding="async" src="assets/images/apnamart-product-thumb-14.jpg"
-                        class="img-fluid rounded" alt="Card title">
+                        class="img-fluid rounded" alt="Daily Roots pantry product">
                     </div>
                     <div class="col-md-8">
                       <div class="card-body py-0">
-                        <p class="text-muted mb-0">Amber Jar</p>
-                        <h5 class="card-title">Honey best nectar you wish to get</h5>
+                        <span class="apna-brand-verified">✓ Verified brand</span>
+                        <p class="text-muted mb-0">Daily Roots</p>
+                        <h5 class="card-title">Wholesome Pantry</h5>
+                        <span class="apna-brand-shop">Shop brand <b>↗</b></span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card mb-3 p-3 rounded-4 shadow border-0">
+                <div class="card apna-provider-card mb-3 p-3 rounded-4 shadow border-0">
                   <div class="row g-0">
                     <div class="col-md-4">
                       <img loading="lazy" decoding="async" src="assets/images/apnamart-product-thumb-11.jpg"
-                        class="img-fluid rounded" alt="Card title">
+                        class="img-fluid rounded" alt="Golden Hive honey">
                     </div>
                     <div class="col-md-8">
                       <div class="card-body py-0">
-                        <p class="text-muted mb-0">Amber Jar</p>
-                        <h5 class="card-title">Honey best nectar you wish to get</h5>
+                        <span class="apna-brand-verified">✓ Verified brand</span>
+                        <p class="text-muted mb-0">Golden Hive</p>
+                        <h5 class="card-title">Everyday Wellness</h5>
+                        <span class="apna-brand-shop">Shop brand <b>↗</b></span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card mb-3 p-3 rounded-4 shadow border-0">
+                <div class="card apna-provider-card mb-3 p-3 rounded-4 shadow border-0">
                   <div class="row g-0">
                     <div class="col-md-4">
                       <img loading="lazy" decoding="async" src="assets/images/apnamart-product-thumb-12.jpg"
-                        class="img-fluid rounded" alt="Card title">
+                        class="img-fluid rounded" alt="Urban Pantry product">
                     </div>
                     <div class="col-md-8">
                       <div class="card-body py-0">
-                        <p class="text-muted mb-0">Amber Jar</p>
-                        <h5 class="card-title">Honey best nectar you wish to get</h5>
+                        <span class="apna-brand-verified">✓ Verified brand</span>
+                        <p class="text-muted mb-0">Urban Pantry</p>
+                        <h5 class="card-title">Modern Kitchen Picks</h5>
+                        <span class="apna-brand-shop">Shop brand <b>↗</b></span>
                       </div>
                     </div>
                   </div>
@@ -533,7 +585,7 @@
   </section>
 
 
-  <section id="trending-products" class="py-5">
+  <section id="trending-products" class="py-5 apna-trending-showcase">
     <div class="container-fluid">
 
       <div class="row">
@@ -543,8 +595,9 @@
             <div class="tabs-header apna-trending-header my-5">
               <div class="apna-trending-intro">
                 <span class="apna-section-eyebrow"><span></span> Curated for you</span>
-                <h2>Trending Products</h2>
+                <h2>Trending <em>right now.</em></h2>
                 <p>Fresh picks and everyday favourites shoppers are loving right now.</p>
+                <div class="apna-trending-pulse"><span></span> Updated daily from shopper favourites</div>
               </div>
               <nav class="apna-tab-nav" aria-label="Trending product categories">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -1564,17 +1617,20 @@
     </div>
   </section>
 
-  <section class="py-5 overflow-hidden">
+  <section class="py-5 overflow-hidden apna-best-sellers">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
 
-          <div class="section-header d-flex flex-wrap justify-content-between my-5">
-
-            <h2 class="section-title">Best selling products</h2>
+          <div class="section-header apna-best-header d-flex flex-wrap justify-content-between my-5">
+            <div class="apna-best-heading">
+              <span class="apna-section-eyebrow"><span></span> Loved by thousands</span>
+              <h2 class="section-title">The everyday <em>chart-toppers.</em></h2>
+              <p>Our most-loved essentials, ranked by what ApnaMart shoppers keep coming back for.</p>
+            </div>
 
             <div class="d-flex align-items-center">
-              <a href="#" class="btn-link text-decoration-none">View All Categories →</a>
+              <a href="#trending-products" class="btn-link text-decoration-none">Shop all best sellers <span>→</span></a>
               <div class="swiper-buttons">
                 <button class="swiper-prev products-carousel-prev btn btn-primary">❮</button>
                 <button class="swiper-next products-carousel-next btn btn-primary">❯</button>
@@ -1898,30 +1954,41 @@
     </div>
   </section>
 
-  <section class="py-5">
+  <section class="py-5 apna-welcome-offer">
     <div class="container-fluid">
 
-      <div class="bg-secondary py-5 my-5 rounded-5"
-        style="background-color:#eaf2ff;background-image:radial-gradient(circle at 8% 18%,rgba(37,99,235,.16) 0 9%,transparent 9.5%),radial-gradient(circle at 92% 82%,rgba(14,165,233,.15) 0 12%,transparent 12.5%),linear-gradient(120deg,rgba(255,255,255,.45),transparent);background-repeat:no-repeat;">
-        <div class="container my-5">
-          <div class="row">
-            <div class="col-md-6 p-5">
+      <div class="apna-offer-panel">
+        <span class="apna-offer-spark apna-offer-spark-one" aria-hidden="true">✦</span>
+        <span class="apna-offer-spark apna-offer-spark-two" aria-hidden="true">✦</span>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 apna-offer-copy">
+              <span class="apna-offer-eyebrow">Welcome to ApnaMart</span>
+              <div class="apna-offer-badge"><strong>25%</strong><span>OFF<br>your first order</span></div>
               <div class="section-header">
-                <h2 class="section-title display-4">Get <span class="text-primary">25% Discount</span> on your first
-                  purchase</h2>
+                <h2 class="section-title display-4">Your first basket deserves a <em>happy beginning.</em></h2>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictumst amet, metus, sit massa posuere
-                maecenas. At tellus ut nunc amet vel egestas.</p>
+              <p>Sign up today and enjoy more value on fresh groceries, pantry favourites and everyday essentials.</p>
+              <div class="apna-offer-benefits">
+                <span><b>✓</b> Instant welcome offer</span>
+                <span><b>✓</b> Freshness guaranteed</span>
+                <span><b>✓</b> No hidden charges</span>
+              </div>
             </div>
-            <div class="col-md-6 p-5">
-              <form>
+            <div class="col-md-6">
+              <form class="apna-offer-form">
+                <div class="apna-offer-form-head">
+                  <span>Unlock your offer</span>
+                  <h3>Save 25% today</h3>
+                  <p>Your welcome code will be sent directly to your inbox.</p>
+                </div>
                 <div class="mb-3">
                   <label for="name" class="form-label">Name</label>
                   <input type="text" class="form-control form-control-lg" name="name" id="name" placeholder="Enter your name">
                 </div>
                 <div class="mb-3">
-                  <label for="" class="form-label">Email</label>
-                  <input type="email" class="form-control form-control-lg" name="email" id="email"
+                  <label for="offer-email" class="form-label">Email address</label>
+                  <input type="email" class="form-control form-control-lg" name="email" id="offer-email"
                     placeholder="Enter your email address">
                 </div>
                 <div class="form-check form-check-inline mb-3">
@@ -1930,8 +1997,9 @@
                     Subscribe to the newsletter</label>
                 </div>
                 <div class="d-grid gap-2">
-                  <button type="submit" class="btn btn-dark btn-lg">Submit</button>
+                  <button type="submit" class="btn btn-dark btn-lg">Claim my 25% off <span>→</span></button>
                 </div>
+                <small class="apna-offer-privacy">🔒 Your details are safe with us. Unsubscribe anytime.</small>
               </form>
 
             </div>
@@ -1944,17 +2012,21 @@
     </div>
   </section>
 
-  <section class="py-5 overflow-hidden">
+  <section class="py-5 overflow-hidden apna-popular-showcase">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
 
-          <div class="section-header d-flex justify-content-between">
-
-            <h2 class="section-title">Most popular products</h2>
-
-            <div class="d-flex align-items-center">
-              <a href="#" class="btn-link text-decoration-none">View All Categories →</a>
+          <div class="section-header apna-popular-header">
+            <span class="apna-section-eyebrow"><span></span> Community favourites</span>
+            <h2 class="section-title">Most popular <em>in every basket.</em></h2>
+            <p>Reliable everyday picks loved for their quality, value and freshness.</p>
+            <div class="apna-popular-proof">
+              <div><strong>4.8★</strong><span>average rating</span></div>
+              <div><strong>50k+</strong><span>happy shoppers</span></div>
+            </div>
+            <div class="d-flex align-items-center apna-popular-actions">
+              <a href="#trending-products" class="btn-link text-decoration-none">Discover all <span>→</span></a>
               <div class="swiper-buttons">
                 <button class="swiper-prev products-carousel-prev btn btn-primary">❮</button>
                 <button class="swiper-next products-carousel-next btn btn-primary">❯</button>
@@ -2274,17 +2346,20 @@
     </div>
   </section>
 
-  <section class="py-5 overflow-hidden">
+  <section class="py-5 overflow-hidden apna-new-arrivals">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
 
-          <div class="section-header d-flex justify-content-between">
-
-            <h2 class="section-title">Just arrived</h2>
-
-            <div class="d-flex align-items-center">
-              <a href="#" class="btn-link text-decoration-none">View All Categories →</a>
+          <div class="section-header apna-arrivals-header">
+            <div class="apna-arrivals-title">
+              <span class="apna-new-drop"><i></i> New drop</span>
+              <h2 class="section-title">Just arrived, <em>ready to discover.</em></h2>
+              <p>Meet the freshest additions to our shelves—new flavours, smart staples and delightful finds.</p>
+            </div>
+            <div class="d-flex align-items-center apna-arrivals-actions">
+              <span class="apna-arrivals-count"><strong>12</strong> new picks</span>
+              <a href="#trending-products" class="btn-link text-decoration-none">Explore the drop <span>→</span></a>
               <div class="swiper-buttons">
                 <button class="swiper-prev products-carousel-prev btn btn-primary">❮</button>
                 <button class="swiper-next products-carousel-next btn btn-primary">❯</button>
